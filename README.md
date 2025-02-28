@@ -31,10 +31,32 @@ This framework (complex prompt) guides Reasoning AI systems to process unstructu
 
 ### Basic Usage
 
-1. Prepare your AI feedback files and feedback-on-feedback files
-2. Copy the prompt from [prompt.md](prompt.md)
-3. Send the prompt to your AI system, followed by your feedback files
-4. Review the generated improvement list
+A human developer will use this framework as follows:
+
+1.  **Gather Unstructured Feedback:** Collect unstructured text feedback on your code from several different AI systems.  This feedback should analyze your code and suggest improvements.
+
+2.  **"Feedback on Feedback" (Optional but Recommended):** Gather additional unstructured text feedback where AIs analyze and critique the *initial* feedback.  This helps identify conflicting opinions and improve the overall quality of the analysis.
+
+3.  **Prepare Input Files:**
+    *   Create separate text files for each AI's initial feedback (e.g., `feedback_ai1.txt`, `feedback_ai2.txt`).
+    *   Create separate text files for each AI's feedback-on-feedback (e.g., `meta_feedback_ai1.txt`, `meta_feedback_ai2.txt`).  These files should clearly indicate which initial feedback they are referencing.
+    *   Ensure your code files are accessible to the Reasoning AI.
+
+4.  **Framework as Prompt:** Copy the entire framework (the prompt) from [prompt.md](prompt.md).
+
+5.  **Send to Reasoning AI:**  Input the following to your Reasoning AI, in this order:
+    *   The complete framework (prompt) from [prompt.md](prompt.md).
+    *   The initial AI feedback files, one after another.
+    *   The feedback-on-feedback files, one after another.
+    *   Instructions to begin processing, referencing your code files as context, something like: "Begin processing the feedback, using the provided code files as context."
+
+6.  **AI-Generated List:** The Reasoning AI, guided by the framework, will process the input and produce a draft Actionable Improvement List (in Markdown format).
+
+7.  **Human Review and Refinement:** *Critically review* and *manually adjust* the AI-generated list.  Apply your domain knowledge and judgment.  You may add, modify, or remove entries. The AI-generated list is a *starting point*, not a final product.
+
+8.  **Iterative Improvement:**  This process can be repeated with updated code and feedback.
+
+**Goal:** The framework aims to produce the most useful and accurate *draft* Actionable Improvement List possible, minimizing the manual effort required for post-processing and validation.
 
 ### Example Input
 
