@@ -38,7 +38,7 @@ A human developer will use this framework as follows:
 
 1.  **Gather Unstructured Feedback:** Collect unstructured text feedback on your code from several different AI systems.  This feedback should analyze your code and suggest improvements.
 
-2.  **"Feedback on Feedback" (Optional but Recommended):** Gather additional unstructured text feedback where AIs analyze and critique the *initial* feedback.  This helps identify conflicting opinions and improve the overall quality of the analysis.
+2.  **"Feedback on Feedback" or "Meta-Analysis" (Optional but Highly Recommended):** Gather additional unstructured text feedback where AIs analyze and critique the *initial* feedback.  This helps identify conflicting opinions and improve the overall quality of the analysis.
 
 3.  **Prepare Input Files:**
     *   Create separate text files for each AI's initial feedback (e.g., `feedback_ai1.txt`, `feedback_ai2.txt`).
