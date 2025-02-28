@@ -1,6 +1,6 @@
 # AI Meta Feedback Analyzer for Code Improvements
 
-This framework guides Reasoning AI systems to process unstructured AI feedback and feedback-on-feedback to generate prioritized lists of software improvements. The output is a human-reviewable, Markdown-formatted document that helps developers implement changes efficiently.
+This framework (complex prompt) guides Reasoning AI systems to process unstructured AI feedback and feedback-on-feedback to generate prioritized lists of software improvements. The output is a human-reviewable, Markdown-formatted document that helps developers implement changes efficiently.
 
 ## 🌟 Features
 
