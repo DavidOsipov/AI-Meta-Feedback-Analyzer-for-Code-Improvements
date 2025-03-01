@@ -92,6 +92,8 @@ This framework instructs a Reasoning AI to process AI feedback *and* feedback-on
 
 ## 4. Output Requirements (Well-formatted text)
 
+### Output the list in sorted by priority order from Critical to Low and Unknown!
+
 ```markdown
 # Actionable Improvement List
 
