@@ -1,4 +1,4 @@
-# AI Meta Feedback Analyzer for Code Improvements - Version 3
+# AI Meta Feedback Analyzer for Code Improvements
 
 **Introduction:**
 
@@ -92,7 +92,12 @@ This framework instructs a Reasoning AI to process AI feedback *and* feedback-on
 
 ## 4. Output Requirements (Well-formatted text)
 
-### Output the list in sorted by priority order from Critical to Low and Unknown!
+### General output requirements
+*   You **MUST** sort the list of improvements according to the following rules:
+    *   **Phase 1: Sort by Priority:** Sort the entire list by the `Priority` field in the following order: Critical, High, Medium, Low, Unknown.
+        *   **Reasoning:** This ensures that the most critical issues (those that could cause crashes, data loss, or security vulnerabilities) are always presented at the top of the list, regardless of how much effort they require to fix.  Critical issues *must* be addressed first.
+    *   **Phase 2: Sort by Effort (within Priority):** For each priority level (Critical, High, etc.), sort the improvements *within that level* by the `Effort` field in the following order: Low, Medium, High.
+        *   **Reasoning:** Within each priority category, sorting by effort allows reviewers to address "quick wins" (low-effort improvements) first. This maximizes the immediate impact of the review process and allows for faster resolution of smaller problems *within* each priority level.
 
 ```markdown
 # Actionable Improvement List
